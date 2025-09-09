@@ -390,8 +390,8 @@ header {
   position: relative;
 }
 .modal-imagenes img {
-  max-width: 100%;
-  height: auto;
+  width: 800px;
+  height: 500px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
@@ -455,15 +455,28 @@ model-viewer {
 }
 
 #modelo_3d {
- display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 20px;
-  gap: 40px;
-  background-color: #f4f4f4;
-  text-align: center;
+ max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 40px;
+    background-color: #f4f4f4;
+}
+
+.proyectos_elaborados {
+  min-width: 300px;
   flex: 1;
+}
+
+.imagen_proyecto {
+  width: 500px;
+  height: 300px;
+}
+
+#proyectos {
+   max-width: 1200px;
+    margin: auto;
+    text-align: left;
+    padding: 40px 20px;
+    gap: 40px;
 }
