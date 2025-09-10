@@ -47,10 +47,8 @@
     </section>
 <section id="modelo_3d">
   <h2>Modelo Estructural LOD 300</h2>
-  <model-viewer src="modelos_3d/modelo_granja.glb" 
-  camera-controls
-  auto-rotate 
-  touch-action></model-viewer>
+  <model-viewer camera-controls touch-action="pan-y" src="modelos_3d/modelo_granja.glb" alt="modelo_estructura_granja"></model-viewer>
+
 </section>
 
 <section id="proyectos" class="proyectos_elaborados">
@@ -116,13 +114,44 @@
 </section>
 
 <section id="contacto">
-  <h2>Contacto</h2>
+  <h2 class="contacto">Contáctanos</h2>
+   <form
+  action="https://formspree.io/f/xkgvyzoj"
+  class="fs-form"
+  target="_top"
+  method="POST"
+>
+  <div class="fs-field">
+    <label class="fs-label" for="name">Tu nombre</label>
+    <input class="fs-input" id="name" name="name" required />
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="email">Email</label>
+    <input class="fs-input" id="email" name="email" required />
+    <p class="fs-description">
+      Nos pondremos en contacto contigo a la brevedad.
+    </p>
+  </div>
+  <div class="fs-field">
+    <label class="fs-label" for="message">Mensaje</label>
+    <textarea
+      class="fs-textarea"
+      id="message"
+      name="message"
+      required
+    ></textarea>
+    <p class="fs-description">¿En qué podemos ayudarte?</p>
+  </div>
+  <div class="fs-button-group">
+    <button class="fs-button" type="submit">Enviar</button>
+  </div>
+</form>
   <p>Email: contacto@3dbim.net</p>
   <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/carloscampilloo/" target="_blank">yourprofile</a></p> #termina de agregar información a esta linea de codigo cuando crees pagina de linkedin (eliminar señalamiento de texto) -->
 </section>
 
 <footer>
-  <p>© 2025 3D BIM</p>
+  <p>© 2025 3D BIM STUDIO</p>
 </footer>
 
 

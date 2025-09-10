@@ -28,7 +28,6 @@ function updateProjectImage(projectIndex) {
 setInterval(() => updateProjectImage(0), 4000); // Project 0
 setInterval(() => updateProjectImage(1), 4000); // Project 1
 
-
 // MODAL DE PAGINA INTERACTIVA //
 let imagenesProyecto = [];
 let indiceImagen = 0;
@@ -36,14 +35,26 @@ let indiceImagen = 0;
 document.querySelectorAll(".project").forEach(proj => {
   proj.addEventListener("click", () => {
     const titulo = proj.dataset.title;
-    const descripcion = proj.dataset.description;
+    let descripcion = proj.dataset.description; // usamos let porque lo modificaremos
     imagenesProyecto = proj.dataset.images.split(",");
     indiceImagen = 0;
 
     document.getElementById("modalTitulo").textContent = titulo;
-    document.getElementById("modalTexto").textContent = descripcion;
-    document.getElementById("imagenActual").src = imagenesProyecto[indiceImagen];
 
+    // 🔹 Insertar saltos de párrafo solo en lugares específicos
+    descripcion = descripcion
+      .replace("usuarios.", "usuarios.</p><p>")
+      .replace("proyecto.", "proyecto.</p><p>")
+      .replace("necesario.", "necesario.</p><p>")
+      .replace("principal.", "principal.</p><p>");
+
+
+
+    // Envolver todo en un párrafo inicial
+    descripcion = `<p>${descripcion}</p>`;
+
+    document.getElementById("modalTexto").innerHTML = descripcion;
+    document.getElementById("imagenActual").src = imagenesProyecto[indiceImagen];
     document.getElementById("modalProyecto").style.display = "block";
   });
 });
@@ -58,4 +69,5 @@ function cambiarImagen(direccion) {
   if (indiceImagen >= imagenesProyecto.length) indiceImagen = 0;
   document.getElementById("imagenActual").src = imagenesProyecto[indiceImagen];
 }
+
 
