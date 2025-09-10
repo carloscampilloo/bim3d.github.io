@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Portafolio de BIM Truss: Soluciones BIM en ingeniería estructural y MEP.">
+    <meta name="description" content="3D BIM Studio: Soluciones BIM en ingeniería estructural y MEP.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D BIM Estudio | Portafolio</title>
     <link rel="stylesheet" href="style.css">
@@ -47,7 +47,11 @@
     </section>
 <section id="modelo_3d">
   <h2>Modelo Estructural LOD 300</h2>
-  <model-viewer camera-controls touch-action="pan-y" src="modelos_3d/modelo_granja.glb" alt="modelo_estructura_granja"></model-viewer>
+  <model-viewer camera-controls
+  auto-rotate
+  orientation="0deg 270deg 0deg"
+  rotation="0deg 90deg 0deg"
+  touch-action="pan-x" src="modelos_3d/model/modelo_granja.glb" alt="modelo_estructura_granja"></model-viewer>
 
 </section>
 
@@ -89,7 +93,7 @@
         data-description="Se realizaron estudios estructurales en granjas Bachoco, naves industriales y centros de distribución, con el fin de evaluar la capacidad de carga de perfiles de acero y elementos de concreto frente al peso adicional de sistemas fotovoltaicos en techumbre. Los resultados obtenidos se integraron en modelos BIM, generando representaciones precisas de las estructuras y propuestas de reforzamiento cuando fue necesario. Asimismo, mediante el uso de StaadPro se determinó la capacidad límite de carga de las edificaciones, lo que permitió definir soluciones seguras y eficientes para la instalación de paneles solares. Gracias a este trabajo, fue posible garantizar la viabilidad estructural en distintos sitios, impulsando proyectos de generación de energía solar para el autoabastecimiento de las granjas."
         data-images="portfolio_images/bachoco/bachoco_render_1.png, portfolio_images/bachoco/bachoco_render_2.png, portfolio_images/bachoco/bachoco_dibujos.png, portfolio_images/bachoco/bachoco_sedis_1.png, portfolio_images/bachoco/bechoco_sedis.png">
       <img src="portfolio_images/imagenes en general/render_bachoco_1.png" alt="Granja Bachoco" class="imagen_proyecto">
-      <h3>Analisis estructural, Granjas Bachoco - Sonora</h3>
+      <h3>Análisis estructural, Granjas Bachoco - Sonora</h3>
       <p>Levantamiento y análisis estructural para sistemas fotovoltaicos</p>
     </div>
 
@@ -146,12 +150,12 @@
     <button class="fs-button" type="submit">Enviar</button>
   </div>
 </form>
-  <p>Email: contacto@3dbim.net</p>
+    <!--<p>Email: contacto@3dbim.net</p>-->
   <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/carloscampilloo/" target="_blank">yourprofile</a></p> #termina de agregar información a esta linea de codigo cuando crees pagina de linkedin (eliminar señalamiento de texto) -->
 </section>
 
 <footer>
-  <p>© 2025 3D BIM STUDIO</p>
+  <p>© 2025 3D BIM Studio</p>
 </footer>
 
 
