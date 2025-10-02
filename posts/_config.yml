@@ -1,0 +1,6 @@
+title: "Mi sitio BIM Truss"
+description: "Portafolio y blog sobre BIM y estructural"
+baseurl: "" # si usas dominio personalizado déjalo vacío
+url: "blog.html"
+
+theme: minima  # Tema por defecto de Jekyll
